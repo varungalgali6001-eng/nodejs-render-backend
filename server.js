@@ -6,7 +6,11 @@ app.use(express.json());
 
 // GET route
 app.get("/getData", (req, res) => {
-    res.send("Server is running successfully!");
+    res.json({
+        message: "Hello from the backend!",
+        name: "Varun",
+        age: 19,
+    })
 });
 
 // POST route
